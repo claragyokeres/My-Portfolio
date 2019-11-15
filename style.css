@@ -1,8 +1,9 @@
 header img {
-    width: 100%;
-    height: 400px;
-    opacity: 0.5;
-    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    opacity: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .centered {
@@ -10,9 +11,20 @@ header img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
+    font-size: 30px;
     color: white;
 }
+
+.centered p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.centered h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
 
 body {
     background-color: lightpink;

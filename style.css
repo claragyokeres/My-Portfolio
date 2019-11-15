@@ -128,6 +128,10 @@ h6 {
     width: 100%;
 }
 
+.mylinks img {
+    height: 50%
+}
+
 .skills {
     background-color: #F4F4F4;
     opacity: 0.8;
@@ -148,6 +152,16 @@ h6 {
     width: 100%;
 }
 
+.socials img {
+    size: 5%;
+    border: solid red;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 3px;
+
+}
+
 .contact {
     background-color: #F4F4F4;
     opacity: 0.9;
@@ -157,4 +171,5 @@ h6 {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    text-decoration: none;
 }

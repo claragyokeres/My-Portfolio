@@ -1,58 +1,111 @@
-header img {
-    width: 50%;
-    height: 50%;
-    opacity: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
-    color: white;
-}
-
-.centered p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-}
-
-.centered h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-}
-
-
 body {
     background-color: lightpink;
     font-family: 'Montserrat', sans-serif;
 }
 
-.aboutme {
-    width: 100%;
-    background-color: #F4F4F4;
-    opacity: 0.8;
+.link-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin: 110px 40px 0 0;
+}
+
+.link-icons img {
+    border: solid white;
+    border-radius: 50%;
+    width: auto;
+    height: 40px;
+    padding: 5px;
+    margin: 20px 20px 0 0;
+}
+
+.header-text-box {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
     height: 200px;
     display: flex;
+    text-align: left;
+    padding-left: 80px;
+    padding-bottom: 30px;
+    flex-direction: column;
+}
+
+p {
+    text-align: center;
+}
+
+h1 {
+    margin: 5px 20px 5px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    padding: 5px;
+}
+
+h4 {
+    margin: 5px 20px 20px 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 25px;
+}
+
+h6 {
+    margin: 20px 20px 5px 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+.my-picture {
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    display: flex;
+    right: 40px;
+    margin: 40px 40px 0 0;
+    width: 170px;
+    height: 170px;
+    border: 2px solid white;
+}
+
+.introduction-box {
+    background-color: #F4F4F4;
+    height: 200px;
+    display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    flex-direction: column;
+}
 
+.introduction-text {
+    width: 500px;
+    height: 270px;
+    text-align: left;
+    letter-spacing: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: black;
+    opacity: 1;
+    margin: 20px 0;
 }
 
 .tech {
-    width: 100%;
     background-color: white;
     opacity: 0.8;
     height: 200px;
     display: flex;
-    text-align: center;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-
+    width: 100%;
 }
 
 .projects {
@@ -61,53 +114,47 @@ body {
     opacity: 0.8;
     height: 200px;
     display: flex;
-    text-align: center;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .mylinks {
-    width: 100%;
     background-color: white;
     opacity: 0.8;
     height: 200px;
     display: flex;
-    text-align: center;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    width: 100%;
 }
 
-
 .skills {
-    width: 100%;
     background-color: #F4F4F4;
     opacity: 0.8;
     height: 200px;
     display: flex;
-    text-align: center;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    width: 100%;
 }
 
 .socials {
-    width: 100%;
     background-color: white;
     opacity: 0.8;
     height: 200px;
     display: flex;
-    text-align: center;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    width: 100%;
 }
 
 .contact {
-    width: 100%;
     background-color: #F4F4F4;
     opacity: 0.9;
     height: 200px;
     text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-
+    width: 100%;
 }

@@ -1,12 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: lightpink;
     font-family: 'Montserrat', sans-serif;
 }
 
-.link-icons {
+header {
+    background: lighpink;
+    background-size: cover;
+    background-position: top;
+    color: #FFF;
+    height: 500px;
+}
+
+.header-container {
+    max-width: 1300px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.header-links {
+    position: absolute;
+    top: 70px;
+    right: 10%;
+    padding: 30px 10px;
     display: flex;
-    justify-content: flex-end;
-    margin: 110px 40px 0 0;
+    flex-direction: row;
+}
+
+.header-links a {
+    margin-left: 10px;
+}
+
+.btn {
+    border: 3px solid #FFF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+#btn-in {
+    background-image: url('linkedinlogo.png');
+}
+
+#btn-so {
+    background-image: url('stackoverflowlogo.png');
+}
+
+#btn-gh {
+    background-image: url('githublogo.png');
 }
 
 .link-icons img {
@@ -18,19 +66,40 @@ body {
     margin: 20px 20px 0 0;
 }
 
+.line-dot {
+    height: 3px;
+    width: 50px;
+    background: red;
+    position: relative;
+    float: left;
+    top: 12px;
+    margin-right: 10px;
+}
+
 .header-text-box {
+    width: 75%;
+    position: absolute;
+    top: 170px;
+    left: 10%;
+}
+
+.header-text-box h4 {
+    color: #FFF;
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    height: 200px;
-    display: flex;
-    text-align: left;
-    padding-left: 80px;
-    padding-bottom: 30px;
-    flex-direction: column;
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: 0;
 }
 
 p {
+    font-size: 17px;
+    line-height: 1.5;
     text-align: center;
+    display: block;
+}
+
+.highlight {
+    font-weight: 600;
 }
 
 h1 {
@@ -43,6 +112,7 @@ h1 {
 
 h2 {
     font-family: 'Montserrat', sans-serif;
+    display: inline-block;
     text-align: center;
     font-weight: bold;
     color: white;
@@ -51,10 +121,12 @@ h2 {
 }
 
 h4 {
-    margin: 5px 20px 20px 20px;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: red;
+    margin: 10px 0;
 }
 
 h6 {
@@ -65,15 +137,35 @@ h6 {
 }
 
 .my-picture {
+    border: 3px solid #FFF;
     border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
+    height: 200px;
+    width: 200px;
+    display: block;
+}
+
+@media (max-width: 666px) and (min-width: 540px) {
+    .figure {
+        width: 200px;
+        position: absolute;
+        margin: 0;
+        top: 330px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 667px) {
+    .figure {
+        width: 230px;
+        position: absolute;
+        margin: 0;
+        top: 290px;
+    }
+}
+
+figure {
     display: flex;
-    right: 40px;
-    margin: 40px 40px 0 0;
-    width: 170px;
-    height: 170px;
-    border: 2px solid white;
+    flex-direction: column;
+    width: 100%;
 }
 
 .introduction-box {
@@ -99,6 +191,7 @@ h6 {
 }
 
 .tech {
+    font-family: 'Montserrat', sans-serif;
     background-color: white;
     opacity: 0.8;
     height: 200px;
@@ -118,18 +211,39 @@ h6 {
     align-items: center;
 }
 
-.mylinks {
-    background-color: white;
-    opacity: 0.8;
-    height: 200px;
+.project-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: left;
     width: 100%;
+    margin-bottom: 20px;
 }
 
-.mylinks img {
-    height: 50%
+.myLinks {
+    width: 100%;
+    display: flex;
+    background-color: white;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.thought-card {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.thought-card-img {
+    background-size: cover;
+    background-position: center;
+    border-radius: 3px;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 10px;
 }
 
 .skills {
@@ -159,7 +273,46 @@ h6 {
     height: 50px;
     width: 50px;
     padding: 3px;
+    flex-direction: column;
+}
 
+.more-links-socials {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.more-links {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-more {
+    border: 3px solid red;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+#btn-more-in {
+    background-image: url('linkedinlogored.png');
+}
+
+#btn-more-so {
+    background-image: url('stacklogored.png');
+}
+
+.more-links-socials p {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: red;
+    font-weight: 700;
+    margin-top: 10px;
 }
 
 .contact {

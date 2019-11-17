@@ -14,27 +14,38 @@
 
 <body>
     <header>
-        <div class="link-icons">
-            <nav>
-                <a href="https://www.linkedin.com/in/clara-gyökeres-403327b3/"><img src="linkedinlogo.png"
-                        alt="Linkedin Logo"></a>
-                <a href="https://github.com/claragyokeres"><img src="githublogo.png" alt="Github Logo"></a>
-                <a href="https://stackoverflow.com/c/technigo/users/18"><img src="stackoverflowlogo.png"
-                        alt="Stack Overflow Logo"></a>
-            </nav>
-        </div>
-        <div class="header-text-box">
-            <h6>PORTFOLIO: CLARA GYÖKERES</h6>
-            <h1>frontend <br> developer</h1>
-            <h4>+ project manager</h4>
-            <img class="my-picture" src="CLARA.png" alt="My profile picture">
-        </div>
+        <div class="header-container">
+            <div class="header-links">
+                <a class="header-links-tab" tabindex="0" role="button" aria-pressed="false"
+                    href="https://www.linkedin.com/in/clara-gyökeres-403327b3/">
+                    <div class="btn" id="btn-in"></div>
+                </a>
+                <a class="header-links-tab" tabindex="0" role="button" aria-pressed="false"
+                    href="https://github.com/claragyokeres">
+                    <div class="btn" id="btn-gh"></div>
+                </a>
+                <a class="header-links-tab" tabindex="0" role="button" aria-pressed="false"
+                    href="https://stackoverflow.com/c/technigo/users/18">
+                    <div class="btn" id="btn-so"></div>
+                </a>
+            </div>
 
+            <div class="header-text-box">
+                <h4>PORTFOLIO: <span class="highlight">CLARA GYÖKERES</span></h4>
+                <h1>frontend developer</h1>
+                <h4>+ project manager</h4>
+                <figure><img class="my-picture" src="CLARA.png" alt="My profile picture"></figure>
+            </div>
+        </div>
     </header>
 
     <section class="introduction-box">
         <div class="introduction-text">
-            <p>Hello! I’m a project manager and front end developer with an eye for design. I have been working within
+            <p>
+                <span class="line-dot">
+                </span>
+                Hello! I’m a project manager and front end developer with an eye for design. I have been working
+                within
                 the music industry as well as with e-commerce. Hire me! </p>
         </div>
     </section>
@@ -47,15 +58,21 @@
 
     <section class="projects">
         <h2>FEATURED PROJECTS</h2>
+        <div class="projects-shown">
+            <a class="project-card" href="https://github.com/claragyokeres/project-weather-app.git">
+            </a></div>
         <p>A collection of my work</p>
     </section>
 
-    <section class="mylinks">
+    <section class="myLinks">
         <h2>MY THOUGHTS ABOUT CODE</h2>
-        <img class="medium-img" src="medium.png" alt="Photo of a woman by a desk">
-        <p>Links and reads</p>
-        <a
-            href="https://medium.com/@claragyokeres/what-getting-into-coding-bootcamp-taught-me-about-impostor-syndrome-932fd92d6284">>></a>
+        <div class="thoughts-flex">
+            <a class="thought-card"
+                href="https://medium.com/@claragyokeres/what-getting-into-coding-bootcamp-taught-me-about-impostor-syndrome-932fd92d6284">
+                <div class="thought-card-img" style="background-image: url(" medium.png")></div>
+            </a>
+            <h4>Nov 2019</h4>
+        </div>
     </section>
 
     <section class="skills">
@@ -66,10 +83,18 @@
 
     <section class="socials">
         <h2>FOR MORE</h2>
-        <a href="https://www.linkedin.com/in/clara-gyökeres-403327b3/"><img src="linkedinlogored.png"
-                alt="Linkedin Logo"></a>
-        <a href="https://stackoverflow.com/c/technigo/users/18"><img src="stacklogored.png"
-                alt="Stack Overflow Logo"></a>
+        <div class="more-links-socials">
+            <a class="more-links" tabindex="0" role="button" aria-pressed="false"
+                href="https://www.linkedin.com/in/clara-gyökeres-403327b3/">
+                <div class="btn-more" id="btn-more-in"></div>
+            </a>
+            <p>LinkedIn</p>
+            <a class="more-links" tabindex="0" role="button" aria-pressed="false"
+                href="https://stackoverflow.com/c/technigo/users/18">
+                <div class="btn-more" id="btn-more-so"></div>
+            </a>
+            <p>StackOverflow</p>
+        </div>
     </section>
 
 

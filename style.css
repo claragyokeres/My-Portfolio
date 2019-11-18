@@ -2,23 +2,34 @@
     box-sizing: border-box;
 }
 
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: red;
+}
+
+address div {
+    display: block;
+}
+
 body {
     background-color: lightpink;
     font-family: 'Montserrat', sans-serif;
 }
 
 header {
-    background: lighpink;
+    background: lightpink;
     background-size: cover;
     background-position: top;
     color: #FFF;
-    height: 500px;
+    height: 400px;
 }
 
 .header-container {
     max-width: 1300px;
     position: relative;
     margin: 0 auto;
+    display: flex;
 }
 
 .header-links {
@@ -37,8 +48,8 @@ header {
 .btn {
     border: 3px solid #FFF;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 65px;
+    height: 65px;
     background: none;
     background-repeat: no-repeat;
     background-position: center;
@@ -73,21 +84,20 @@ header {
     position: relative;
     float: left;
     top: 12px;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .header-text-box {
-    width: 75%;
     position: absolute;
     top: 170px;
-    left: 10%;
+    left: 20%;
+    margin: auto;
 }
 
 .header-text-box h4 {
     color: #FFF;
     font-family: 'Montserrat', sans-serif;
     font-size: 19px;
-    font-weight: 700;
     margin-top: 0;
 }
 
@@ -98,12 +108,7 @@ p {
     display: block;
 }
 
-.highlight {
-    font-weight: 600;
-}
-
 h1 {
-    margin: 5px 20px 5px 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: white;
@@ -124,62 +129,44 @@ h4 {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
     font-weight: 700;
-    text-transform: uppercase;
     color: red;
     margin: 10px 0;
 }
 
-h6 {
-    margin: 20px 20px 5px 20px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 15px;
-}
-
 .my-picture {
+    width: 50%;
+    max-width: 200px;
+    max-height: 200px;
+    height: 100%;
     border: 3px solid #FFF;
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    display: block;
 }
 
-@media (max-width: 666px) and (min-width: 540px) {
-    .figure {
-        width: 200px;
-        position: absolute;
-        margin: 0;
-        top: 330px;
-    }
+.avatar {
+    border-radius: 50%;
+    height: 162px;
+    width: 162px;
+    border: 3px solid #ffffff;
+    object-fit: cover;
 }
 
 @media (max-width: 1024px) and (min-width: 667px) {
-    .figure {
-        width: 230px;
+    .avatar {
+        height: 162px;
+        width: 162px;
         position: absolute;
-        margin: 0;
-        top: 290px;
     }
-}
-
-figure {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
 }
 
 .introduction-box {
     background-color: #F4F4F4;
     height: 200px;
     display: flex;
-    text-align: center;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
 .introduction-text {
-    width: 500px;
     height: 270px;
     text-align: left;
     letter-spacing: 0;
@@ -187,14 +174,14 @@ figure {
     font-size: 20px;
     color: black;
     opacity: 1;
-    margin: 20px 0;
+    margin: 80px 50px;
 }
 
 .tech {
     font-family: 'Montserrat', sans-serif;
     background-color: white;
     opacity: 0.8;
-    height: 200px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -221,10 +208,8 @@ figure {
 
 .myLinks {
     width: 100%;
-    display: flex;
     background-color: white;
     opacity: 0.8;
-    display: flex;
     flex-direction: column;
     text-align: center;
     margin-bottom: 20px;
@@ -238,12 +223,13 @@ figure {
 }
 
 .thought-card-img {
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     border-radius: 3px;
-    width: 100%;
-    height: 180px;
+    height: 100px;
     margin-bottom: 10px;
+    background-image: url('medium.png');
 }
 
 .skills {
@@ -307,10 +293,13 @@ figure {
     background-image: url('stacklogored.png');
 }
 
+#btn-more-gh {
+    background-image: url('githublogo.png');
+}
+
 .more-links-socials p {
     font-size: 11px;
     text-transform: uppercase;
-    color: red;
     font-weight: 700;
     margin-top: 10px;
 }
@@ -318,7 +307,7 @@ figure {
 .contact {
     background-color: #F4F4F4;
     opacity: 0.9;
-    height: 200px;
+    height: 300px;
     text-align: center;
     display: flex;
     flex-direction: column;

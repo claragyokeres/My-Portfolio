@@ -133,13 +133,9 @@ h4 {
     margin: 10px 0;
 }
 
-.my-picture {
-    width: 50%;
-    max-width: 200px;
-    max-height: 200px;
-    height: 100%;
-    border: 3px solid #FFF;
-    border-radius: 50%;
+.header-picture {
+    margin-top: 300px;
+    margin-right: 40px;
 }
 
 .avatar {

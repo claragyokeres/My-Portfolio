@@ -340,6 +340,7 @@
   .more-thoughts-text{
     font-size: 17px;
     line-height: 1.5;
+    color: black;
   }
   
   /* STYLING FOR SKILLS */
@@ -386,7 +387,7 @@
   }
   
    .btn-more {
-    border: 3px solid pink;
+    border: 3px solid red;
     border-radius: 50%;
     width: 60px;
     height: 60px;

@@ -85,7 +85,7 @@
   }
   
   .header-links {
-    position: absolute; /*relative to html since parent has a static position*/
+    position: absolute; 
     top: 70px;
     right: 10%;
     padding: 30px 10px;
@@ -583,8 +583,8 @@
     }
   
     figure {
-      width: 300px; 
-      top: 250px;
+      width: 220px; 
+      top: 300px;
     }
   
     .projects-flex {

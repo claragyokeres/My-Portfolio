@@ -5,114 +5,287 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <title>Portfolio Clara Gyökeres</title>
-
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <title>Clara Gyökeres</title>
+    <!-- FAVICON PACKAGE -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
+
+    <!-- HEADER -->
     <header>
-        <div class="header-container">
+        <div class="header-wrapper">
             <div class="header-links">
                 <a class="header-links-tab" tabindex="0" role="button" aria-pressed="false"
                     href="https://www.linkedin.com/in/clara-gyökeres-403327b3/">
-                    <div class="btn" id="btn-in"></div>
+                    <div class="btn"><img class="btn-img" src="assets/linkedin-small.svg" alt="LinkedIn"></div>
                 </a>
                 <a class="header-links-tab" tabindex="0" role="button" aria-pressed="false"
-                    href="https://github.com/claragyokeres">
-                    <div class="btn" id="btn-gh"></div>
+                    href="https://github.com/nyblad">
+                    <div class="btn"><img class="btn-img" src="assets/github-small.svg" alt="GitHub"></div>
                 </a>
                 <a class="header-links-tab" tabindex="0" role="button" aria-pressed="false"
-                    href="https://stackoverflow.com/c/technigo/users/18">
-                    <div class="btn" id="btn-so"></div>
+                    href="https://stackoverflow.com/users/12130664/claragyokeres?tab=profile">
+                    <div class="btn"><img class="btn-img" src="assets/stackoverflow-small.svg" alt="StackOverflow">
+                    </div>
                 </a>
             </div>
-
-            <div class="header-text-box">
-                <h4>PORTFOLIO: <span class="highlight">CLARA GYÖKERES</span></h4>
-                <h1>frontend <br> developer</h1>
-                <h4>+ project manager</h4>
+            <div class="header-info">
+                <h4>Portfolio: <span class="highlight">Clara Gyökeres</span></h4>
+                <h1>Frontend developer</h1>
+                <h3>+ project manager </h3>
             </div>
-            <div class="header-picture">
-                <img class="avatar" src="CLARA.png" alt="avatar picture">
-            </div>
+            <figure>
+                <img class="profile-img" src="clarabild.jpg" alt="profile picture">
+            </figure>
         </div>
     </header>
 
-    <section class="introduction-box">
-        <div class="introduction-text">
-            <p>
-                <span class="line-dot">
-                </span>
-                Hello! I’m a project manager and front end developer with an eye for design. I have been working
-                within
-                the music industry as well as with e-commerce. Hire me! </p>
+    <main>
+
+        <!-- SUMMARY -->
+        <div class="wrapper-grey">
+            <section class="summary">
+                <p><span class="line-dot"></span>A creative-minded front end developer, event manager/coordinator
+                    with 360° skills including Music and event management, Coordination and production,
+                    Production Assistance and retail. With my background and interest in the music
+                    and entertainment business, I enjoy combining music and tech. I like to make big dreams come alive.
+                </p>
+                <p>During Sept 2019 to March 2020 I'm attending <a href="https://www.technigo.io/"
+                        target="_blank">Technigos
+                        remote bootcamp</a> with the main goal to work with web development full time after
+                    graduate.</p>
+            </section>
         </div>
-    </section>
 
-    <section class="tech">
-        <h2>TECH</h2>
-        <p>HTML, CSS, Flexbox, JavaScript, ES6, JSX, Node.js, Web Accessibly, API:s, mob-programming,
-            pair-programming, Github.</p>
-    </section>
-
-    <section class="projects">
-        <h2>FEATURED PROJECTS</h2>
-        <div class="projects-shown">
-            <a class="project-card" href="https://github.com/claragyokeres/project-weather-app.git">
-            </a></div>
-        <p>A collection of my work</p>
-    </section>
-
-    <section class="myLinks">
-        <h2>MY THOUGHTS ABOUT CODE</h2>
-        <div class="thoughts-flex">
-            <a class="thought-card"
-                href="https://medium.com/@claragyokeres/what-getting-into-coding-bootcamp-taught-me-about-impostor-syndrome-932fd92d6284">
-                <div class="thought-card-img"></div>
-            </a>
-            <h4>Nov 2019</h4>
+        <!-- TECH -->
+        <div class="wrapper-white">
+            <section class="tech">
+                <h2>TECH</h2>
+                <p>HTML5, CSS3, Flexbox, JavaScript ES6, React, Node.js, API:s, Web Accessibility, mob-programming,
+                    pair-programming, GitHub.</p>
+            </section>
         </div>
-    </section>
 
-    <section class="skills">
-        <h2>SKILLS</h2>
-        <p>Javascript, HTML, GitHub, ZenDesk, NAV, Logic Pro, Excel, Slack
-        </p>
-    </section>
 
-    <section class="socials">
-        <h2>FOR MORE</h2>
-        <div class="more-links-socials">
-            <a class="more-links" tabindex="0" role="button" aria-pressed="false"
-                href="https://www.linkedin.com/in/clara-gyökeres-403327b3/">
-                <div class="btn-more" id="btn-more-in"></div>
-                <p>Linkedin</p>
-            </a>
-            <a class="more-links" tabindex="0" role="button" aria-pressed="false"
-                href="https://stackoverflow.com/c/technigo/users/18">
-                <div class="btn-more" id="btn-more-so"></div>
-                <p>stackoverflow</p>
-            </a>
-            <a class="more-links" tabindex="0" role="button" aria-pressed="false"
-                href="https://github.com/claragyokeres">
-                <div class="btn-more" id="btn-more-gh"></div>
-                <p>github</p>
-            </a>
+        <div class="wrapper-grey">
+            <section class="featured-projects">
+                <h2>FEATURED PROJECTS</h2>
+                <div class="projects-flex">
+
+                    <a class="project-card" href="https://github.cmusic-releases">
+                        <div class="project-card-title">Music site</div>
+                        <div class="project-card-img" style="background-image: url('assets/project-music-site.jpg')">
+                        </div>
+                        <div class="project-card-text"><span class="text-h">Music site with React.</span> Project week 9
+                            @ Technigo
+                            Bootcamp 2019 was to use React components to build a page which shows new album and single
+                            releases.<span class="text-h"> >></span>
+                        </div>
+                        <div class="project-card-tags">
+                            <div class="tag">HTML5</div>
+                            <div class="tag">CSS3</div>
+                            <div class="tag">React</div>
+                        </div>
+                    </a>
+
+                    <a class="project-card" href="https://github.eather-app">
+                        <div class="project-card-title">Weather app</div>
+                        <div class="project-card-img" style="background-image: url('assets/project-weather-day.jpg')">
+                        </div>
+                        <div class="project-card-text"><span class="text-h">Weather app with API.</span> Project week 6
+                            @ Technigo
+                            Bootcamp 2019 was to build a simple weather web app that shows today's weather and
+                            temperature and a
+                            forecast using a weather API.<span class="text-h"> >></span></div>
+                        <div class="project-card-tags">
+                            <div class="tag">HTML5</div>
+                            <div class="tag">CSS3</div>
+                            <div class="tag">JavaScript ES6</div>
+                            <div class="tag">API</div>
+                        </div>
+                    </a>
+
+                </div>
+            </section>
+
+            <section class="other-projects">
+                <h3>OTHER PROJECTS</h3>
+                <a class="other-project-card" href="https://github.com/claragyokeres/project-happy-thoughts">
+                    <div class="project-card-text"><span class="text-h">Happy thoughts-app.</span> Project week 11 @
+                        Technigo Bootcamp was to use React to build a Twitter-like app (but only with happy tweets).
+                        Focus on
+                        practice Ract hooks useState and useEffect to fetch and
+                        post data to an API.<span class="text-h"> >></span>
+                    </div>
+                    <div class="project-card-tags">
+                        <div class="tag">HTML5</div>
+                        <div class="tag">CSS3</div>
+                        <div class="tag">React</div>
+                        <div class="tag">Moment.js</div>
+                    </div>
+                </a>
+                <a class="other-project-card" href="https://github.com/claragyokeres/project-survey">
+                    <div class="project-card-text"><span class="text-h">Quiz time with React.</span> Project 10 @
+                        Technigo
+                        Bootcamp 2019 was to create a survey form using React. Learning objectives was to use .map() to
+                        iterate over
+                        an array of data and work with React hook useSate.<span class="text-h"> >></span>
+                    </div>
+                    <div class="project-card-tags">
+                        <div class="tag">HTML5</div>
+                        <div class="tag">CSS3</div>
+                        <div class="tag">React</div>
+                    </div>
+                </a>
+                <a class="other-project-card" href="https://github.csite">
+                    <div class="project-card-text"><span class="text-h">Group project in Sthlm.</span> During week 7 @
+                        Technigo
+                        Bootcamp we had a meet-up in Stockholm and our team was challenged to build a website that lists
+                        restaurants, reviews and information based on location.<span class="text-h"> >></span></div>
+                    <div class="project-card-tags">
+                        <div class="tag">HTML5</div>
+                        <div class="tag">CSS3</div>
+                        <div class="tag">JavaScript ES6</div>
+                        <div class="tag">API</div>
+                    </div>
+                </a>
+            </section>
         </div>
-    </section>
 
+        <!-- THOUGHTS -->
+        <div class="wrapper-white">
+            <section class="my-thoughts">
+                <h2>MY THOUGHTS ABOUT CODE</h2>
+                <div class="thoughts-flex">
+                    <a class="thought-card"
+                        href="https://medium.com/@claragyokeres/what-getting-into-coding-bootcamp-taught-me-about-impostor-syndrome-932fd92d6284/">
+                        <div class="thought-card-img" style="background-image: url('assets/office.svg')"></div>
+                        <p>Dec 2019</p>
+                        <div class="thought-headline">What getting in to Coding Bootcamp taught me about Impostor
+                            Syndrome</div>
+                        <div class="thought-card-text">If someone had told me one year ago that “a year from now, you’ll
+                            be sitting
+                            in front of your computer with challenging javascript tasks given to you by your cool tech
+                            bootcamp”,
+                            I’m pretty certain I would have been bursting out in laughter.<span class="text-h">
+                                >></span></div>
+                    </a>
+                    <a class="thought-card"
+                        href="https://medium.com/@claragyokeres/combining-music-with-tech-160df3bb8369">
+                        <div class="thought-card-img" style="background-image: url('assets/people.svg')"></div>
+                        <p>Nov 2019</p>
+                        <div class="thought-headline">Combining Music with Tech</div>
+                        <div class="thought-card-text">Starting to code has made me realize that everything around me is
+                            data. <span class="text-h"> >></span></div>
+                    </a>
+                </div>
+            </section>
 
-    <section class="contact">
-        <div>
-            <h2>CONTACT</h2>
-            <p>Clara Gyökeres</p>
-            <p>+46 76 341 58 39 </p>
-            </p> <a href="mailto:clara.gyokeres@gmail.com">clara.gyokeres@gmail.com</a></p>
+            <section class="more-thoughts">
+                <h3>MORE THOUGHTS</h3>
+                <a class="more-thoughts-card"
+                    href="https://medium.com/@claragyokeres/4-things-not-to-underestimate-for-newbie-coders-3b5a4e6531fa">
+                    <div class="more-thoughts-text"><span class="text-h">OCTOBER 2019.</span> 4 things not to
+                        underestimate for newbie coders.<span class="text-h"> >></span>
+                    </div>
+                </a>
+            </section>
         </div>
-    </section>
+
+        <!-- SKILLS -->
+        <div class="wrapper-grey">
+            <section class="skills">
+                <h2>SKILLS</h2>
+                <div class="skill-box-outer">
+                    <div class="skill-box-inner-left">
+                        <h4>Code</h4>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript ES6</li>
+                            <li>React</li>
+                            <li>GitHub</li>
+                        </ul>
+                        <h4>Upcoming</h4>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Redux</li>
+                        </ul>
+                    </div>
+                    <div class="skill-box-inner-right">
+                        <div class="skill-box">
+                            <h4>Toolbox</h4>
+                            <ul>
+                                <li>VS Code</li>
+                                <li>Slack</li>
+                                <li>Trello</li>
+                                <li>Episerver CMS</li>
+                            </ul>
+                        </div>
+                        <div class="skill-box">
+                            <h4>More</h4>
+                            <ul>
+                                <li>ZenDesk</li>
+                                <li>Project Management</li>
+                                <li>Customer Support</li>
+                                <li>Remote work</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- MORE -->
+        <div class="wrapper-white">
+            <section class="more">
+                <h2>FOR MORE</h2>
+                <div class="more-links-wrapper">
+                    <a class="more-links" tabindex="0" role="button" aria-pressed="false"
+                        href="https://www.linkedin.com/in//">
+                        <div class="btn-more"><img class="btn-more-img" src="assets/linkedin-big.svg"
+                                alt="LinkedIn icon"></div>
+                        <p>LinkedIn</p>
+                    </a>
+                    <a class="more-links" tabindex="0" role="button" aria-pressed="false" href="https://github.com">
+                        <div class="btn-more"><img class="btn-more-img" src="assets/github-big.svg" alt="GitHub icon">
+                        </div>
+                        <p>GitHub</p>
+                    </a>
+                    <a class="more-links" tabindex="0" role="button" aria-pressed="false"
+                        href="https://stackoverflow.com/users/12034125/">
+                        <div class="btn-more"><img class="btn-more-img" src="assets/stackoverflow-big.svg"
+                                alt="StackOverflow icon">
+                        </div>
+                        <p>StackOverflow</p>
+                    </a>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>Contact</h3>
+        <h4>Clara Gyökeres</h4>
+        <p>+46 76 341 58 39</p>
+        <p><a class="email" href="mailto:clara.gyokeres@gmail.com">clara.gyokeres@gmail.com</a></p>
+
+    </footer>
+
+    <!-- JavaScript to swap words -->
+    <script src="script.js"></script>
 
 </body>
 

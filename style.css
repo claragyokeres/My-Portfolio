@@ -71,7 +71,6 @@
   
   header {
     background: pink;
-    background-image: url('assets/wallpaper_700.jpg');
     background-size: cover;
     background-position: top left;
     color: #FFF;
@@ -462,9 +461,6 @@
       font-size: 17px;
     }
   
-    header {
-      background-image: url('assets/wallpaper_1200.jpg');
-    }
   
     .btn {
       width: 80px;
@@ -562,10 +558,6 @@
       font-size: 21px;
     }
   
-    header {
-      background-image: url('assets/wallpaper_2000.jpg');
-    }
-  
     .btn {
       width: 80px;
       height: 80px;
@@ -653,7 +645,6 @@
     .btn-more-img {
       width: 48px;
     }
-    
   
     .more-links-wrapper p {
       font-size: 17px;
